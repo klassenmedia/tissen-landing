@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { baueNachricht, whatsappLink, bereinigeOrt, ANLIEGEN } from "../assets/anfrage.js";
+import { baueNachricht, whatsappLink, whatsappAppLink, istMobilgeraet, bereinigeOrt, ANLIEGEN } from "../assets/anfrage.js";
 
 test("Nachricht enthält Anliegen und Ort", () => {
   const text = baueNachricht("heizung-kalt", "Löhne");
@@ -58,4 +58,35 @@ test("Skripte nutzen keine HTML-Sinks", async () => {
     const quelltext = await readFile(new URL(`../${datei}`, import.meta.url), "utf8");
     assert.doesNotMatch(quelltext, /innerHTML|outerHTML|insertAdjacentHTML|document\.write/, datei);
   }
+});
+
+test("App-Link nutzt whatsapp:// und funktioniert damit auch mit WhatsApp Business", () => {
+  const link = new URL(whatsappAppLink("heizung-kalt", "Vlotho"));
+  assert.equal(link.protocol, "whatsapp:");
+  assert.equal(link.searchParams.get("phone"), "491702389177");
+  assert.match(link.searchParams.get("text"), /Heizung/);
+  assert.match(link.searchParams.get("text"), /Vlotho/);
+});
+
+test("Handys werden erkannt, Desktop nicht", () => {
+  const iphone = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15";
+  const android = "Mozilla/5.0 (Linux; Android 15; Pixel 9) AppleWebKit/537.36 Chrome/130 Mobile Safari/537.36";
+  const ipadAlsMac = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15";
+  const mac = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15";
+  assert.equal(istMobilgeraet(iphone, 5), true);
+  assert.equal(istMobilgeraet(android, 5), true);
+  assert.equal(istMobilgeraet(ipadAlsMac, 5), true);
+  assert.equal(istMobilgeraet(mac, 0), false);
+});
+
+test("App-Link lässt sich über den Ort nicht manipulieren", () => {
+  const link = new URL(whatsappAppLink("bad", "Vlotho&phone=4900000#x"));
+  assert.deepEqual(link.searchParams.getAll("phone"), ["491702389177"]);
+  assert.equal(link.hash, "");
+  assert.match(link.searchParams.get("text"), /&phone=4900000#x/);
+});
+
+test("iPads werden erkannt, Macs ohne Touch nicht", () => {
+  assert.equal(istMobilgeraet("Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)", 5), true);
+  assert.equal(istMobilgeraet("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", 1), false);
 });

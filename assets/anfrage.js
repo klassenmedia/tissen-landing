@@ -38,3 +38,13 @@ export function baueNachricht(schluessel, ort) {
 export function whatsappLink(schluessel, ort) {
   return `https://wa.me/${WHATSAPP_NUMMER}?text=${encodeURIComponent(baueNachricht(schluessel, ort))}`;
 }
+
+// whatsapp:// öffnet auch WhatsApp Business; wa.me-Links öffnet iOS nur mit der normalen App.
+export function whatsappAppLink(schluessel, ort) {
+  return `whatsapp://send?phone=${WHATSAPP_NUMMER}&text=${encodeURIComponent(baueNachricht(schluessel, ort))}`;
+}
+
+export function istMobilgeraet(userAgent, maxTouchPoints) {
+  const ipadMitDesktopKennung = /Macintosh/.test(userAgent) && maxTouchPoints > 1;
+  return /Android|iPhone|iPad|iPod/i.test(userAgent) || ipadMitDesktopKennung;
+}
