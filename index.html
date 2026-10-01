@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://klassenmedia.github.io/tissen-landing/assets/img/og.png">
 <link rel="icon" href="assets/img/icon-180.png">
 <link rel="apple-touch-icon" href="assets/img/icon-180.png">
-<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/arimo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/site.css">
 <script type="module" src="assets/main.js"></script>
 <script type="application/ld+json">
@@ -65,15 +65,27 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "Meine Heizung ist kalt. Wie erreiche ich Gebäudetechnik Tissen am schnellsten?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Am schnellsten per WhatsApp an 0170 2389177: kurz beschreiben, ein Foto vom Display oder Typenschild der Heizung mitschicken und den Ort nennen. Oder direkt anrufen, Montag bis Freitag von 8:00 bis 16:30 Uhr."}},
+     "acceptedAnswer": {"@type": "Answer", "text": "Per WhatsApp an 0170 2389177: kurz beschreiben, ein Foto vom Display oder Typenschild der Heizung mitschicken und den Ort nennen. Oder direkt anrufen, Montag bis Freitag von 8:00 bis 16:30 Uhr."}},
+    {"@type": "Question", "name": "Was kann ich selbst prüfen, wenn die Heizung ausfällt?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Schauen Sie auf das Manometer: Liegt der Anlagendruck deutlich unter dem üblichen Wert (bei Einfamilienhäusern meist zwischen 1 und 2 bar), fehlt Wasser in der Anlage. Prüfen Sie außerdem Heizungs-Notschalter und Sicherung. Zeigt das Display einen Fehlercode, fotografieren Sie ihn und schicken ihn mit."}},
+    {"@type": "Question", "name": "Wasser läuft aus einer Leitung. Was sollte ich sofort tun?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Drehen Sie den Hauptwasserhahn zu, meist im Keller beim Wasserzähler. Halten Sie Wasser von Steckdosen und Elektrogeräten fern. Schicken Sie dann ein Foto der Stelle per WhatsApp."}},
     {"@type": "Question", "name": "In welchen Orten ist Gebäudetechnik Tissen im Einsatz?",
      "acceptedAnswer": {"@type": "Answer", "text": "Der Betrieb sitzt in Bad Oeynhausen-Eidingsen und arbeitet in Bad Oeynhausen und Umgebung, unter anderem in Löhne, Porta Westfalica, Vlotho, Minden, Hüllhorst, Kirchlengern, Hille und Herford."}},
+    {"@type": "Question", "name": "Welche Heizung passt zu meinem Haus?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Das hängt von Dämmung, Heizkörpern, Platz und Budget ab. Gebäudetechnik Tissen montiert Wärmepumpen, Gas- und Öl-Brennwerttechnik, Pelletheizungen und Hybridanlagen und berät vor Ort, welche Lösung sich für Ihr Haus rechnet."}},
     {"@type": "Question", "name": "Lohnt sich eine Wärmepumpe im Altbau?",
      "acceptedAnswer": {"@type": "Answer", "text": "Oft ja, das hängt aber von Dämmung, Heizkörpern und Vorlauftemperatur ab. Gebäudetechnik Tissen prüft das vor Ort und plant bei Bedarf eine Hybridlösung, etwa Wärmepumpe plus Pellet- oder Gasheizung."}},
     {"@type": "Question", "name": "Hilft Gebäudetechnik Tissen bei der Förderung?",
      "acceptedAnswer": {"@type": "Answer", "text": "Ja. Für neue Heizungen gibt es staatliche Zuschüsse. Gebäudetechnik Tissen sagt Ihnen, welche Förderung für Ihr Haus in Frage kommt, und unterstützt beim Antrag."}},
+    {"@type": "Question", "name": "Wie läuft eine Badsanierung ab?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Nach einem Termin vor Ort planen Sie mit Gebäudetechnik Tissen das neue Bad, auf Wunsch mit 3D-Badplaner. Sie bekommen ein Angebot mit Zeitplan, danach begleitet das Team die Umsetzung von der Planung bis zur Fertigstellung."}},
     {"@type": "Question", "name": "Wie oft sollte eine Heizung gewartet werden?",
-     "acceptedAnswer": {"@type": "Answer", "text": "Einmal im Jahr, am besten vor der Heizsaison. Eine regelmäßige Wartung hält die Anlage effizient und beugt Ausfällen im Winter vor."}}
+     "acceptedAnswer": {"@type": "Answer", "text": "Einmal im Jahr, am besten vor der Heizsaison. Eine regelmäßige Wartung hält die Anlage effizient und beugt Ausfällen im Winter vor."}},
+    {"@type": "Question", "name": "Arbeitet Gebäudetechnik Tissen auch für Vermieter und Mehrfamilienhäuser?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Ja. Neben Einfamilienhäusern modernisiert der Betrieb auch Heizungen in Mehrfamilienhäusern und unterstützt bei Neubauprojekten."}},
+    {"@type": "Question", "name": "Was kostet ein Einsatz?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Das hängt vom Problem ab. Mit einem Foto lässt sich besser einschätzen, was zu tun ist. Vor größeren Arbeiten bekommen Sie ein schriftliches Angebot."}}
   ]
 }
 </script>
@@ -91,12 +103,11 @@
     </a>
     <nav class="kopf__nav" aria-label="Hauptnavigation">
       <a href="#leistungen">Leistungen</a>
-      <a href="#ablauf">Ablauf</a>
-      <a href="#stimmen">Kunden</a>
       <a href="#gebiet">Einsatzgebiet</a>
       <a href="#fragen">Fragen</a>
+      <a href="#kontakt">Kontakt</a>
     </nav>
-    <a class="knopf knopf--klein knopf--tel" href="tel:+491702389177"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span>0170 2389177</span></a>
+    <a class="knopf knopf--klein knopf--tuerkis kopf__tel" href="tel:+491702389177"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg><span>0170 2389177</span></a>
   </div>
 </header>
 
@@ -107,15 +118,15 @@
   <div class="held__innen">
     <div class="held__text">
       <h1>
-        <span class="vorzeile">Heizung &amp; Sanitär in Bad Oeynhausen</span>
-        <span class="riesig">Heizung kalt?<br>Wasser tropft?<br><em>Ein Foto genügt.</em></span>
+        <span class="riesig">Heizung kalt? Wasser tropft? <em>Ein Foto genügt.</em></span>
+        <span class="unterzeile">Ihr Betrieb für Heizung, Sanitär und Bad in Bad Oeynhausen</span>
       </h1>
       <p class="held__lead">Schicken Sie uns per WhatsApp ein Foto von Ihrem Problem. Wir schauen es uns an, melden uns zurück und kommen mit dem richtigen Ersatzteil.</p>
-      <ul class="held__fakten">
-        <li><strong>Alle Gewerke</strong> aus einer Hand</li>
-        <li><strong>Eigenes Team</strong> aus Bad Oeynhausen</li>
-        <li><strong>Mo–Fr</strong> 8:00–16:30 Uhr</li>
-      </ul>
+      <div class="held__knoepfe">
+        <a class="knopf knopf--tuerkis" href="tel:+491702389177"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>0170 2389177 anrufen</a>
+        <a class="held__textlink" href="#kontakt">oder in Ruhe schreiben</a>
+      </div>
+      <p class="held__gewerke">Heizung <span aria-hidden="true">/</span> Sanitär <span aria-hidden="true">/</span> Bad <span aria-hidden="true">/</span> Klima <span aria-hidden="true">/</span> Solarthermie <span class="held__zeit">· Mo–Fr 8:00–16:30 Uhr</span></p>
     </div>
 
     <div class="regler" data-regler>
@@ -123,7 +134,7 @@
       <span class="regler__schraube" aria-hidden="true"></span><span class="regler__schraube" aria-hidden="true"></span>
       <div class="regler__kopf">
         <span class="regler__led" aria-hidden="true"></span>
-        <span>TISSEN · ANFRAGE-REGLER</span>
+        <span>Schnell-Anfrage per WhatsApp</span>
         <span class="regler__temp" aria-hidden="true">VL <b data-vorlauf>55</b>°C</span>
       </div>
       <div class="display" aria-live="polite">
@@ -133,12 +144,16 @@
       </div>
       <fieldset class="regler__tasten">
         <legend class="nur-sr">Anliegen wählen</legend>
-        <button type="button" class="taste taste--warn" data-anliegen="heizung-kalt"><span>E-01</span>Heizung kalt</button>
-        <button type="button" class="taste taste--warn" data-anliegen="kein-warmwasser"><span>E-02</span>Kein Warmwasser</button>
-        <button type="button" class="taste taste--warn" data-anliegen="wasserschaden"><span>E-03</span>Wasser tropft</button>
-        <button type="button" class="taste" data-anliegen="waermepumpe"><span>P-04</span>Neue Heizung</button>
-        <button type="button" class="taste" data-anliegen="bad"><span>P-05</span>Neues Bad</button>
-        <button type="button" class="taste" data-anliegen="wartung"><span>S-06</span>Wartung</button>
+        <button type="button" class="taste taste--warn" data-anliegen="heizung-kalt"><span>Notfall</span>Heizung kalt</button>
+        <button type="button" class="taste taste--warn" data-anliegen="kein-warmwasser"><span>Notfall</span>Kein Warmwasser</button>
+        <button type="button" class="taste taste--warn" data-anliegen="wasserschaden"><span>Notfall</span>Wasser tropft</button>
+        <button type="button" class="taste" data-anliegen="neue-heizung"><span>Planung</span>Neue Heizung</button>
+        <button type="button" class="taste" data-anliegen="bad"><span>Planung</span>Neues Bad</button>
+        <button type="button" class="taste" data-anliegen="wartung"><span>Service</span>Wartung</button>
+      </fieldset>
+      <fieldset class="regler__detail" data-detail hidden>
+        <legend data-detail-frage></legend>
+        <div class="regler__chips" data-detail-chips></div>
       </fieldset>
       <label class="regler__ort">
         <span>Ihr Ort (optional)</span>
@@ -149,28 +164,27 @@
         <span data-wa-label>WhatsApp öffnen</span>
       </a>
       <a class="regler__web" href="https://wa.me/491702389177" target="_blank" rel="noopener" data-wa-web>Ohne WhatsApp-App? Über wa.me öffnen</a>
-      <p class="regler__fuss">Lieber reden? <a href="tel:+491702389177">0170 2389177</a> · Ihre Daten bleiben bei Ihnen, bis Sie in WhatsApp auf Senden tippen.</p>
+      <p class="regler__fuss">Ihre Angaben bleiben auf Ihrem Gerät, bis Sie in WhatsApp auf Senden tippen.</p>
     </div>
   </div>
 </section>
 
 <section class="ablauf" id="ablauf" aria-labelledby="ablauf-titel">
   <div class="innen">
-    <p class="schild">Ablauf</p>
-    <h2 id="ablauf-titel">Drei Schritte, null Formulare.</h2>
+    <h2 id="ablauf-titel">So einfach geht’s.</h2>
     <ol class="leitung">
       <li class="leitung__station">
-        <span class="leitung__nr">01</span>
+        <span class="leitung__nr">1</span>
         <h3>Foto schicken</h3>
         <p>Display der Heizung, tropfende Leitung oder das alte Bad. Ein Bild sagt uns mehr als drei Telefonate.</p>
       </li>
       <li class="leitung__station">
-        <span class="leitung__nr">02</span>
+        <span class="leitung__nr">2</span>
         <h3>Wir melden uns</h3>
-        <p>Wir melden uns mit einer ersten Einschätzung und einem Terminvorschlag.</p>
+        <p>Mit einer ersten Einschätzung und einem Terminvorschlag.</p>
       </li>
       <li class="leitung__station">
-        <span class="leitung__nr">03</span>
+        <span class="leitung__nr">3</span>
         <h3>Erledigt</h3>
         <p>Unsere Monteure kommen vorbereitet und mit dem passenden Material. Danach läuft es wieder.</p>
       </li>
@@ -181,28 +195,28 @@
 <section class="leistungen" id="leistungen" aria-labelledby="leistungen-titel">
   <div class="innen">
     <div class="abschnitt-kopf">
-      <p class="schild">Leistungen</p>
       <h2 id="leistungen-titel">Alles, was im Haus Wasser, Wärme oder Luft bewegt.</h2>
+      <p>Alle Gewerke der Haustechnik aus einer Hand. Ein Ansprechpartner, ein Team.</p>
     </div>
     <ul class="typenschild">
       <li>
-        <span class="typenschild__code">H</span>
+        <span class="typenschild__code" aria-hidden="true">H</span>
         <div>
           <h3>Heizung &amp; Wärmepumpe</h3>
           <p>Reparatur, Tausch und Neubau. Wärmepumpe, Gas- und Öl-Brennwert, Pellet, Hybridanlagen, Kraft-Wärme-Kopplung. Inklusive Förderberatung.</p>
         </div>
-        <a href="https://wa.me/491702389177" data-anliegen-link="waermepumpe" target="_blank" rel="noopener">Anfragen <span aria-hidden="true">→</span></a>
+        <a href="https://wa.me/491702389177" data-anliegen-link="neue-heizung" target="_blank" rel="noopener">Anfragen <span aria-hidden="true">→</span></a>
       </li>
       <li>
-        <span class="typenschild__code">B</span>
+        <span class="typenschild__code" aria-hidden="true">B</span>
         <div>
           <h3>Bad &amp; Badsanierung</h3>
-          <p>Vom Designbad bis zum barrierefreien Umbau. Planung, Budget, Ausführung, alles von uns koordiniert.</p>
+          <p>Vom Designbad bis zum barrierefreien Umbau. Planung, Budget und Umsetzung aus einer Hand.</p>
         </div>
         <a href="https://wa.me/491702389177" data-anliegen-link="bad" target="_blank" rel="noopener">Anfragen <span aria-hidden="true">→</span></a>
       </li>
       <li class="typenschild--akut">
-        <span class="typenschild__code">!</span>
+        <span class="typenschild__code" aria-hidden="true">!</span>
         <div>
           <h3>Rohrbruch &amp; Wasserschaden</h3>
           <p>Leckagen, defekte Druckminderer und Filter, Schadensbeseitigung. Schicken Sie ein Foto, dann sagen wir Ihnen, was Sie bis zu unserer Ankunft tun können.</p>
@@ -210,7 +224,7 @@
         <a href="https://wa.me/491702389177" data-anliegen-link="wasserschaden" target="_blank" rel="noopener">Jetzt melden <span aria-hidden="true">→</span></a>
       </li>
       <li>
-        <span class="typenschild__code">S</span>
+        <span class="typenschild__code" aria-hidden="true">S</span>
         <div>
           <h3>Sanitär &amp; Trinkwasser</h3>
           <p>Trinkwasserinstallation, Warmwasserspeicher, Enthärtung, Hebeanlagen, Gasinstallation.</p>
@@ -218,7 +232,7 @@
         <a href="https://wa.me/491702389177" data-anliegen-link="kein-warmwasser" target="_blank" rel="noopener">Anfragen <span aria-hidden="true">→</span></a>
       </li>
       <li>
-        <span class="typenschild__code">K</span>
+        <span class="typenschild__code" aria-hidden="true">K</span>
         <div>
           <h3>Klima &amp; Lüftung</h3>
           <p>Klimaanlagen mit Heizfunktion und zentrale Lüftung, auch im Bestand. Mit Kühllastberechnung statt Bauchgefühl.</p>
@@ -226,10 +240,10 @@
         <a href="https://wa.me/491702389177" data-anliegen-link="sonstiges" target="_blank" rel="noopener">Anfragen <span aria-hidden="true">→</span></a>
       </li>
       <li>
-        <span class="typenschild__code">W</span>
+        <span class="typenschild__code" aria-hidden="true">W</span>
         <div>
           <h3>Wartung &amp; Service</h3>
-          <p>Jährliche Wartung für Heizung, Solarthermie, Lüftung und Gas. Damit die Anlage im Januar läuft und nicht erst im März wieder.</p>
+          <p>Jährliche Wartung für Heizung, Solarthermie, Lüftung und Gas. Damit die Anlage im Januar läuft.</p>
         </div>
         <a href="https://wa.me/491702389177" data-anliegen-link="wartung" target="_blank" rel="noopener">Termin <span aria-hidden="true">→</span></a>
       </li>
@@ -240,25 +254,24 @@
 
 <section class="stimmen" id="stimmen" aria-labelledby="stimmen-titel">
   <div class="innen">
-    <p class="schild schild--hell">Auszüge aus Google-Bewertungen</p>
-    <h2 id="stimmen-titel" class="nur-sr">Was Kunden sagen</h2>
+    <h2 id="stimmen-titel" class="nur-sr">Was Kunden auf Google schreiben</h2>
     <figure class="grosszitat">
       <blockquote>
-        <p>„Alle etablierten Firmen angerufen. Keine konnte zeitnah reparieren. <mark>Ein Anruf, Chef kam noch am Abend selber vorbei.</mark> Am nächsten Tag kamen zwei Monteure, 1,5 Stunden, und das Thema war durch.“</p>
+        <p>„Alle etablierten Firmen angerufen. Keine konnte zeitnah reparieren. <mark>Ein Anruf, Chef kam noch am Abend selber vorbei.</mark>“</p>
       </blockquote>
-      <figcaption>Heinz S. · Defekter Druckminderer und Filter</figcaption>
+      <figcaption>Heinz S. auf Google · defekter Druckminderer und Filter</figcaption>
     </figure>
     <ul class="zitate">
       <li>
-        <p>„Lambda-Wärmepumpe installiert. Abgesprochene Termine wurden eingehalten, der Zeitplan auch.“</p>
+        <p>„Lambda-Wärmepumpe installiert. Abgesprochene Termine für den Umbau wurden eingehalten.“</p>
         <span>Walter S. · Wärmepumpe</span>
       </li>
       <li>
-        <p>„Pelletheizung kombiniert mit Wärmepumpe. Die Kupferverrohrung ist wirklich toll geworden.“</p>
+        <p>„Pelletheizung in Kombination mit einer Wärmepumpe. Die Kupferverrohrung ist wirklich toll geworden.“</p>
         <span>Mabe · Hybridheizung</span>
       </li>
       <li>
-        <p>„Auf meine Anfrage wurde schnell reagiert, kurzfristig Wartungstermin bekommen.“</p>
+        <p>„Auf meine Anfrage wurde schnell reagiert und ich habe kurzfristig einen Termin für die Wartung bekommen.“</p>
         <span>Udo · Heizungswartung</span>
       </li>
       <li>
@@ -266,13 +279,13 @@
         <span>Artur W. · Modernisierung</span>
       </li>
     </ul>
+    <p class="stimmen__hinweis">Auszüge aus öffentlichen Google-Bewertungen.</p>
   </div>
 </section>
 
 <section class="gebiet" id="gebiet" aria-labelledby="gebiet-titel">
   <div class="innen gebiet__raster">
     <div>
-      <p class="schild">Einsatzgebiet</p>
       <h2 id="gebiet-titel">Von Eidingsen aus schnell bei Ihnen.</h2>
       <p>Unser Betrieb sitzt in Bad Oeynhausen-Eidingsen. Von hier haben wir kurze Wege in ganz Bad Oeynhausen und in die Nachbarorte im Kreis Minden-Lübbecke und Kreis Herford.</p>
       <ul class="orte">
@@ -280,39 +293,41 @@
         <li>Hüllhorst</li><li>Kirchlengern</li><li>Hille</li><li>Herford</li>
       </ul>
     </div>
-    <svg class="radar" viewBox="0 0 400 400" role="img" aria-label="Schematische Karte: Eidingsen in der Mitte, Nachbarorte im Umkreis">
-      <circle cx="200" cy="200" r="60" class="radar__ring"/>
-      <circle cx="200" cy="200" r="120" class="radar__ring"/>
-      <circle cx="200" cy="200" r="180" class="radar__ring"/>
-      <g class="radar__strahl"><path d="M200 200 L200 20 A180 180 0 0 1 327 73 Z"/></g>
-      <text x="206" y="136" class="radar__km">5 km</text>
-      <text x="206" y="76" class="radar__km">10 km</text>
-      <text x="206" y="16" class="radar__km">15 km</text>
-      <g class="radar__orte">
-        <circle cx="168" cy="214" r="5"/><text x="168" y="236" text-anchor="middle">Bad Oeynhausen</text>
-        <circle cx="96" cy="236" r="5"/><text x="48" y="258">Löhne</text>
-        <circle cx="318" cy="178" r="5"/><text x="268" y="166">Porta Westfalica</text>
-        <circle cx="236" cy="330" r="5"/><text x="246" y="335">Vlotho</text>
-        <circle cx="300" cy="78" r="5"/><text x="310" y="83">Minden</text>
-        <circle cx="94" cy="96" r="5"/><text x="40" y="84">Hüllhorst</text>
-        <circle cx="34" cy="206" r="5"/><text x="10" y="190">Kirchlengern</text>
-        <circle cx="212" cy="40" r="5"/><text x="224" y="46">Hille</text>
-        <circle cx="70" cy="330" r="5"/><text x="30" y="352">Herford</text>
-      </g>
-      <g class="radar__mitte">
-        <circle cx="200" cy="200" r="22" class="radar__puls"/>
-        <circle cx="200" cy="200" r="9"/>
-        <text x="200" y="182" text-anchor="middle">Eidingsen</text>
-      </g>
-    </svg>
+    <figure class="karte">
+      <svg viewBox="0 0 420 430" role="img" aria-label="Kartenskizze: Eidingsen bei Bad Oeynhausen und die umliegenden Orte an der Weser">
+        <path class="karte__weser" d="M412,336 C360,322 310,312 284,304 S240,286 225,272 S198,248 201,234 S232,206 255,200 S310,186 328,182 S340,150 338,112 S342,40 343,0"/>
+        <text class="karte__fluss" x="352" y="262">Weser</text>
+        <g class="karte__orte">
+          <circle cx="216" cy="248" r="5"/><text x="206" y="244" text-anchor="end">Bad Oeynhausen</text>
+          <circle cx="130" cy="261" r="5"/><text x="130" y="284" text-anchor="middle">Löhne</text>
+          <circle cx="331" cy="198" r="5"/><text x="331" y="223" text-anchor="middle">Porta Westfalica</text>
+          <circle cx="327" cy="114" r="5"/><text x="314" y="110" text-anchor="end">Minden</text>
+          <circle cx="273" cy="312" r="5"/><text x="286" y="330">Vlotho</text>
+          <circle cx="88" cy="123" r="5"/><text x="88" y="108" text-anchor="middle">Hüllhorst</text>
+          <circle cx="52" cy="256" r="5"/><text x="52" y="240" text-anchor="middle">Kirchlengern</text>
+          <circle cx="167" cy="43" r="5"/><text x="167" y="28" text-anchor="middle">Hille</text>
+          <circle cx="91" cy="392" r="5"/><text x="91" y="414" text-anchor="middle">Herford</text>
+        </g>
+        <g class="karte__basis">
+          <circle class="karte__puls" cx="250" cy="208" r="16"/>
+          <path d="M250 194 l13 10 v14 h-26 v-14 Z"/>
+          <text x="270" y="196">Tissen</text>
+        </g>
+        <g class="karte__massstab" transform="translate(250 418)">
+          <path d="M0 0 H144 M0 -5 V5 M144 -5 V5"/>
+          <text x="72" y="-8" text-anchor="middle">10 km</text>
+        </g>
+      </svg>
+      <figcaption>Kartenskizze, Lage der Orte ungefähr.</figcaption>
+    </figure>
   </div>
 </section>
 
 <section class="fragen" id="fragen" aria-labelledby="fragen-titel">
   <div class="innen fragen__raster">
-    <div>
-      <p class="schild">Häufige Fragen</p>
-      <h2 id="fragen-titel">Kurz gefragt, ehrlich beantwortet.</h2>
+    <div class="fragen__kopf">
+      <h2 id="fragen-titel">Häufige Fragen</h2>
+      <p>Ihre Frage ist nicht dabei? <a href="#kontakt">Schreiben Sie uns.</a></p>
     </div>
     <div class="akkordeon">
       <details open>
@@ -320,8 +335,20 @@
         <p>Per WhatsApp an 0170 2389177: kurz beschreiben, ein Foto vom Display oder Typenschild der Heizung mitschicken und den Ort nennen. Oder direkt anrufen, Montag bis Freitag von 8:00 bis 16:30 Uhr.</p>
       </details>
       <details>
+        <summary>Was kann ich selbst prüfen, wenn die Heizung ausfällt?</summary>
+        <p>Schauen Sie auf das Manometer: Liegt der Anlagendruck deutlich unter dem üblichen Wert (bei Einfamilienhäusern meist zwischen 1 und 2 bar), fehlt Wasser in der Anlage. Prüfen Sie außerdem Heizungs-Notschalter und Sicherung. Zeigt das Display einen Fehlercode, fotografieren Sie ihn und schicken ihn mit.</p>
+      </details>
+      <details>
+        <summary>Wasser läuft aus einer Leitung. Was sollte ich sofort tun?</summary>
+        <p>Drehen Sie den Hauptwasserhahn zu, meist im Keller beim Wasserzähler. Halten Sie Wasser von Steckdosen und Elektrogeräten fern. Schicken Sie dann ein Foto der Stelle per WhatsApp.</p>
+      </details>
+      <details>
         <summary>In welchen Orten sind Sie im Einsatz?</summary>
         <p>In Bad Oeynhausen und Umgebung, unter anderem in Löhne, Porta Westfalica, Vlotho, Minden, Hüllhorst, Kirchlengern, Hille und Herford. Ihr Ort fehlt? Fragen Sie einfach.</p>
+      </details>
+      <details>
+        <summary>Welche Heizung passt zu meinem Haus?</summary>
+        <p>Das hängt von Dämmung, Heizkörpern, Platz und Budget ab. Wir montieren Wärmepumpen, Gas- und Öl-Brennwerttechnik, Pelletheizungen und Hybridanlagen und sagen Ihnen vor Ort, was sich für Ihr Haus rechnet.</p>
       </details>
       <details>
         <summary>Lohnt sich eine Wärmepumpe im Altbau?</summary>
@@ -332,32 +359,79 @@
         <p>Ja. Für neue Heizungen gibt es staatliche Zuschüsse. Wir sagen Ihnen, welche Förderung für Ihr Haus in Frage kommt, und unterstützen beim Antrag.</p>
       </details>
       <details>
+        <summary>Wie läuft eine Badsanierung ab?</summary>
+        <p>Nach einem Termin vor Ort planen wir mit Ihnen das neue Bad, auf Wunsch mit 3D-Badplaner. Sie bekommen ein Angebot mit Zeitplan, danach begleiten wir die Umsetzung von der Planung bis zur Fertigstellung.</p>
+      </details>
+      <details>
         <summary>Wie oft sollte die Heizung gewartet werden?</summary>
         <p>Einmal im Jahr, am besten vor der Heizsaison. So bleibt die Anlage sparsam und fällt nicht ausgerechnet im Januar aus.</p>
+      </details>
+      <details>
+        <summary>Arbeiten Sie auch für Vermieter und Mehrfamilienhäuser?</summary>
+        <p>Ja. Neben Einfamilienhäusern modernisieren wir auch Heizungen in Mehrfamilienhäusern und unterstützen bei Neubauprojekten.</p>
+      </details>
+      <details>
+        <summary>Was kostet ein Einsatz?</summary>
+        <p>Das hängt vom Problem ab. Mit einem Foto können wir besser einschätzen, was zu tun ist. Vor größeren Arbeiten bekommen Sie ein schriftliches Angebot.</p>
       </details>
     </div>
   </div>
 </section>
 
-<section class="schluss" aria-labelledby="schluss-titel">
-  <div class="innen schluss__raster">
-    <div>
-      <h2 id="schluss-titel">Ein Foto.<br>Eine Nachricht.<br><em>Wir kümmern uns.</em></h2>
-      <div class="schluss__knoepfe">
-        <a class="knopf knopf--wa" href="https://wa.me/491702389177" data-anliegen-link="sonstiges" target="_blank" rel="noopener">WhatsApp schreiben</a>
-        <a class="knopf knopf--hell" href="tel:+491702389177">0170 2389177 anrufen</a>
-      </div>
+<section class="kontakt" id="kontakt" aria-labelledby="kontakt-titel">
+  <div class="innen kontakt__raster">
+    <div class="kontakt__text">
+      <h2 id="kontakt-titel">Lieber in Ruhe schreiben?</h2>
+      <p>Für alles, was keine Eile hat: Felder ausfüllen und die Nachricht per WhatsApp oder E-Mail an uns schicken.</p>
+      <address class="visitenkarte">
+        <strong>Gebäudetechnik Tissen</strong>
+        Inhaber Alexander Tissen<br>
+        Eidingsen 30a, 32549 Bad Oeynhausen<br>
+        <a href="tel:+491702389177">0170 2389177</a><br>
+        <a href="mailto:info@gebaeudetechnik-tissen.de">info@gebaeudetechnik-tissen.de</a><br>
+        Mo–Fr 8:00–16:30 Uhr<br>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Geb%C3%A4udetechnik+Tissen+Eidingsen+30a+32549+Bad+Oeynhausen" target="_blank" rel="noopener">Route planen →</a>
+      </address>
     </div>
-    <address class="visitenkarte">
-      <strong>Gebäudetechnik Tissen</strong>
-      Inhaber Alexander Tissen<br>
-      Eidingsen 30a<br>
-      32549 Bad Oeynhausen<br><br>
-      <a href="tel:+491702389177">0170 2389177</a><br>
-      <a href="mailto:info@gebaeudetechnik-tissen.de">info@gebaeudetechnik-tissen.de</a><br><br>
-      Mo–Fr 8:00–16:30 Uhr<br>
-      <a href="https://www.google.com/maps/search/?api=1&amp;query=Geb%C3%A4udetechnik+Tissen+Eidingsen+30a+32549+Bad+Oeynhausen" target="_blank" rel="noopener">Route planen →</a>
-    </address>
+    <form class="formular" data-kontakt novalidate>
+      <div class="formular__zeile">
+        <label><span class="formular__titel">Name <span aria-hidden="true">*</span></span>
+          <input name="name" type="text" maxlength="80" autocomplete="name" required>
+        </label>
+        <label>Ort
+          <input name="ort" type="text" maxlength="60" autocomplete="address-level2">
+        </label>
+      </div>
+      <div class="formular__zeile">
+        <label>Telefon
+          <input name="telefon" type="tel" maxlength="25" autocomplete="tel">
+        </label>
+        <label>E-Mail
+          <input name="email" type="email" maxlength="120" autocomplete="email">
+        </label>
+      </div>
+      <label>Worum geht es?
+        <select name="anliegen">
+          <option>Heizung</option>
+          <option>Wärmepumpe</option>
+          <option>Bad &amp; Sanitär</option>
+          <option>Klima &amp; Lüftung</option>
+          <option>Solarthermie</option>
+          <option>Wartung</option>
+          <option>Sonstiges</option>
+        </select>
+      </label>
+      <label><span class="formular__titel">Ihre Nachricht <span aria-hidden="true">*</span></span>
+        <textarea name="nachricht" rows="5" maxlength="1500" required></textarea>
+      </label>
+      <label class="formular__haken"><input type="checkbox" name="rueckruf"> Bitte rufen Sie mich zurück</label>
+      <p class="formular__fehler" data-fehler role="alert"></p>
+      <div class="formular__knoepfe">
+        <button type="submit" class="knopf knopf--wa" value="whatsapp">Per WhatsApp senden</button>
+        <button type="submit" class="knopf knopf--rand" value="email">Per E-Mail senden</button>
+      </div>
+      <p class="formular__hinweis">* Pflichtfeld. Telefon oder E-Mail genügt. Die Nachricht öffnet sich in WhatsApp bzw. Ihrem E-Mail-Programm. Verschickt wird erst, wenn Sie dort auf Senden tippen.</p>
+    </form>
   </div>
 </section>
 

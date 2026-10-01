@@ -90,3 +90,27 @@ test("iPads werden erkannt, Macs ohne Touch nicht", () => {
   assert.equal(istMobilgeraet("Mozilla/5.0 (iPad; CPU OS 17_0 like Mac OS X)", 5), true);
   assert.equal(istMobilgeraet("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)", 1), false);
 });
+
+test("neue Heizung unterstellt keine Wärmepumpe", () => {
+  assert.doesNotMatch(baueNachricht("neue-heizung", ""), /Wärmepumpe/);
+});
+
+test("gewählte Zusatzangabe landet in der Nachricht", () => {
+  const text = baueNachricht("neue-heizung", "Vlotho", "Hybrid");
+  assert.match(text, /^Interesse: Hybrid$/m);
+  assert.match(text, /Vlotho/);
+});
+
+test("unbekannte Zusatzangaben werden ignoriert", () => {
+  assert.equal(baueNachricht("bad", "", "<img src=x>"), baueNachricht("bad", ""));
+  assert.equal(baueNachricht("sonstiges", "", "Gas"), baueNachricht("sonstiges", ""));
+});
+
+test("jede Zusatzfrage hat Frage und Antworten", () => {
+  for (const [schluessel, anliegen] of Object.entries(ANLIEGEN)) {
+    if (!anliegen.detail) continue;
+    assert.ok(anliegen.detail.frage, schluessel);
+    assert.ok(anliegen.detail.zeile, schluessel);
+    assert.ok(anliegen.detail.antworten.length >= 2, schluessel);
+  }
+});
